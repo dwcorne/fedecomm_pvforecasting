@@ -1,0 +1,100 @@
+ 2041  emacs -nw -q train_testing.ssv 
+ 2042  emacs -nw -q build_pvmodel.py
+ 2043  python3 build_pvmodel.py 46.06842770590676 8.968131996804212 0 train_testing.ssv TESTmod
+ 2044  emacs -nw -q train_testing.ssv 
+ 2045  python3 build_pvmodel.py 46.06842770590676 8.968131996804212 0 train_testing.ssv TESTmod
+ 2046  python3 build_pvmodel.py 46.06842770590676 8.968131996804212 0 data/train_cap TESTmod
+ 2047  emacs -nw -q train_testing.ssv 
+ 2048  emacs -nw -q build_pvmodel.py
+ 2049  python3 build_pvmodel.py 46.06842770590676 8.968131996804212 0 train_testing.ssv TESTmod
+ 2050  emacs -nw -q build_pvmodel.py
+ 2051  python3 build_pvmodel.py 46.06842770590676 8.968131996804212 0 train_testing.ssv TESTmod
+ 2052  emacs -nw -q build_pvmodel.py
+ 2053  python3 build_pvmodel.py 46.06842770590676 8.968131996804212 0 train_testing.ssv TESTmod
+ 2054  emacs -nw -q build_pvmodel.py
+ 2055  python3 build_pvmodel.py 46.06842770590676 8.968131996804212 0 train_testing.ssv TESTmod
+ 2056  emacs -nw -q build_pvmodel.py
+ 2057  python3 build_pvmodel.py 46.06842770590676 8.968131996804212 0 train_testing.ssv TESTmod
+ 2058  emacs -nw -q build_pvmodel.py
+ 2059  python3 build_pvmodel.py 46.06842770590676 8.968131996804212 0 train_testing.ssv TESTmod
+ 2060  emacs -nw -q build_pvmodel.py
+ 2061  python3 build_pvmodel.py 46.06842770590676 8.968131996804212 0 train_testing.ssv TESTmod
+ 2062  emacs -nw -q build_pvmodel.py
+ 2063  emacs -nw -q train_testing.ssv 
+ 2064  python3 build_pvmodel.py 46.06842770590676 8.968131996804212 0 train_testing.ssv TESTmod
+ 2065  emacs -nw -q train_testing.ssv 
+ 2066  emacs -nw -q build_pvmodel.py
+ 2067  python3 build_pvmodel.py 46.06842770590676 8.968131996804212 0 train_testing.ssv TESTmod
+ 2068  python3 build_pvmodel.py 46.06842770590676 8.968131996804212 0 data/capri.ssv TESTmod
+ 2069  python3 build_pvmodel.py 46.06842770590676 8.968131996804212 0 data/train_cap TESTmod
+ 2070  emacs -nw -q train_testing.ssv
+ 2071  cp train_testing.ssv train_testing15.ssv
+ 2072  cp train_testing.ssv train_testing30.ssv
+ 2073  cp train_testing.ssv train_testing60.ssv
+ 2074  emacs -nw -q train_testing30.ssv
+ 2075  emacs -nw -q train_testing60.ssv
+ 2076  emacs -nw -q train_testing15.ssv
+ 2077  emacs -nw -q train_testing30.ssv
+ 2078  emacs -nw -q train_testing60.ssv
+ 2079  python3 build_pvmodel.py 46.06842770590676 8.968131996804212 0 train_testing15.ssv TESTmod
+ 2080  python3 build_pvmodel.py 46.06842770590676 8.968131996804212 0 train_testing30.ssv TESTmod
+ 2081  python3 build_pvmodel.py 46.06842770590676 8.968131996804212 0 train_testing60.ssv TESTmod
+ 2082  python3 build_pvmodel.py 46.06842770590676 8.968131996804212 0 train_testing15.ssv TESTmod
+ 2083  emacs -nw -q train_testing60.ssv
+ 2084  python3 build_pvmodel.py 46.06842770590676 8.968131996804212 0 train_testing15.ssv TESTmod
+ 2085  emacs -nw -q train_testing60.ssv
+ 2086  python3 build_pvmodel.py 46.06842770590676 8.968131996804212 0 train_testing15.ssv TESTmod
+ 2087  https://papers.ssrn.com/sol3/papers.cfm?abstract_id=43519944
+ 2088  python3 build_pvmodel.py 46.06842770590676 8.968131996804212 0 train_testing60.ssv TESTmod
+ 2089  python3 build_pvmodel.py 46.06842770590676 8.968131996804212 0 train_testing15.ssv TESTmod
+ 2090  python3 build_pvmodel.py 46.06842770590676 8.968131996804212 0 train_testing60.ssv TESTmod
+ 2091  python3 build_pvmodel.py 46.06842770590676 8.968131996804212 0 train_testing60.ssv TESTmod|less
+ 2092* python3 build_pvmodel.py 46.06842770590676 8.968131996804212 0 train_testing30.ssv TESTmod|le
+ 2093  emacs -nw -q train_testing60.ssv
+ 2094  emacs -nw -q train_testing30.ssv
+ 2095  emacs -nw -q train_testing15.ssv
+ 2096  python3 build_pvmodel.py 46.06842770590676 8.968131996804212 0 train_testing30.ssv TESTmod|less
+ 2097  python3 build_pvmodel.py 46.06842770590676 8.968131996804212 0 train_testing60.ssv TESTmod|less
+ 2098  python3 build_pvmodel.py 46.06842770590676 8.968131996804212 0 train_testing60.ssv TESTmod
+ 2099  python3 build_pvmodel.py 46.06842770590676 8.968131996804212 0 train_testin30.ssv TESTmod
+ 2100  python3 build_pvmodel.py 46.06842770590676 8.968131996804212 0 train_testing60.ssv TESTmod
+ 2101  python3 build_pvmodel.py 46.06842770590676 8.968131996804212 0 train_testing30.ssv TESTmod
+ 2102  python3 build_pvmodel.py 46.06842770590676 8.968131996804212 0 train_testing15.ssv TESTmod
+ 2103  emacs -nw -q train_testing15.ssv
+ 2104  python3 build_pvmodel.py 46.06842770590676 8.968131996804212 0 train_testing15.ssv TESTmod
+ 2105  emacs -nw -q train_testing15.ssv
+ 2106  python3 build_pvmodel.py 46.06842770590676 8.968131996804212 0 train_testing15.ssv TESTmod
+ 2107  ls -lrt
+ 2108  ls -lrt *.py
+ 2109  emacs -nw -q predict_pv.py
+ 2110  eamcs -nw -q NOTES
+ 2111  emacs -nw -q NOTES
+ 2112  ls -lrt
+ 2113  cd data/
+ 2114  ls -lrt
+ 2115  more AIC01_timeseries_PV_2022.csv 
+ 2116  ls -lrt
+ 2117  emacs -nw -q datgrok.c
+ 2118  more capriasca-0122-1123.csv 
+ 2119  emacs -nw -q mult4.awk
+ 2120  awk -f mult4.awk < capriasca-0122-1123.csv 
+ 2121  emacs -nw -q mult4.awk
+ 2122  awk -f mult4.awk < capriasca-0122-1123.csv 
+ 2123* 
+ 2124  awk -f mult4.awk < capriasca-0122-1123.csv 
+ 2125  gawk -f mult4.awk < capriasca-0122-1123.csv 
+ 2126  man awk
+ 2127  emacs -nw -q mult4.awk
+ 2128  awk -f mult4.awk < capriasca-0122-1123.csv 
+ 2129  emacs -nw -q mult4.awk
+ 2130  awk -f mult4.awk < capriasca-0122-1123.csv 
+ 2131  emacs -nw -q mult4.awk
+ 2132  awk -f mult4.awk < capriasca-0122-1123.csv 
+ 2133  emacs -nw -q mult4.awk
+ 2134  awk -f mult4.awk < capriasca-0122-1123.csv 
+ 2135  emacs -nw -q mult4.awk
+ 2136  awk -f mult4.awk < capriasca-0122-1123.csv 
+ 2137  emacs -nw -q mult4.awk
+ 2138  awk -f mult4.awk < capriasca-0122-1123.csv 
+ 2139  history
+ 2140  history | tail -100 > 2904-hist.txt
