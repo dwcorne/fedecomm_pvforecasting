@@ -8,6 +8,13 @@ from pvlib.pvsystem import PVSystem
 from pvlib.temperature import TEMPERATURE_MODEL_PARAMETERS
 
 
+def fixnegs(x):
+    if (x >-1):
+        return x
+    else:
+        return -1
+    
+
 #tilt.py 50.0 0.0 2023-05-01 2023-05-02 bob 12 15 1 0.2
 
 
@@ -24,14 +31,17 @@ inverter_model = sys.argv[9]
 datetime_start = sys.argv[10]
 datetime_end = sys.argv[11]
 freq = sys.argv[12]
+# data = 'data/tmy_10m_met_capriasca_cropped.csv'
+data = sys.argv[13]
+
 
 location = Location(latitude=lat,longitude=lon,tz=tz,altitude=0,name=name)
 
 #cec_modules = pvlib.pvsystem.retrieve_sam('CECMod')
-cec_modules = pvlib.pvsystem.retrieve_sam(path='data/CECModules.csv')
+cec_modules = pvlib.pvsystem.retrieve_sam(path='../data/CECModules.csv')
 print(cec_modules)
 
-cec_inverters = pvlib.pvsystem.retrieve_sam(path='data/CECInverters.csv')
+cec_inverters = pvlib.pvsystem.retrieve_sam(path='../data/CECInverters.csv')
 print(cec_inverters)
 
 module = cec_modules[array_model]
@@ -62,13 +72,19 @@ print("modelchain results")
 
 print("now getting data from file")
 
-extdata = pd.read_csv('data/tmy_10m_met_capriasca_cropped.csv',index_col=0)
+extdata = pd.read_csv(data,index_col=0)
 extdata.index = pd.date_range(start=datetime_start,end=datetime_end,freq=freq,tz=location.tz)
 
 modelchain.run_model(extdata)
 print("new modelchain results")
-print(panels * modelchain.results.ac)
-
+arrayac = panels * modelchain.results.ac
+print(arrayac)
+#tot = modelchain.results.ac.sum()
+fixed = arrayac.apply(fixnegs)
+tot = arrayac.sum()
+totf = fixed.sum()
+maxf = arrayac.max()
+print("total of KWatt values (before/after fix) is: ",  tot/1000, totf/1000, maxf)
 
 
 
